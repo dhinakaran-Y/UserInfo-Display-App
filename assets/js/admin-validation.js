@@ -24,7 +24,7 @@ export async function adminValidation(name, password) {
   }
   
   const data = await response.json();
- // console.log(data);
+  //console.log(data);
  
   cookieAssign(data);
 
@@ -67,8 +67,10 @@ export async function getAdmin(token)  {
   if(!response.ok){
     throw new Error(`Failed to fetch admin info: ${response.status}`);
   }
+
   const data = await response.json();
   //console.log(data);
+
   return data
 
   }catch (error) {
