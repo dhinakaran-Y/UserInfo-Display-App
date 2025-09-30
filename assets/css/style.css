@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.my-btn-submit{
+@apply rounded bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 hover:outline-2 hover:outline-offset-2 hover:outline-indigo-600 dark:bg-indigo-500 dark:shadow-none dark:hover:outline-indigo-500 active:translate-y-1;
+}
+
+.my-btn-clear{
+@apply rounded bg-red-400 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-500 hover:outline-2 hover:outline-offset-2 hover:outline-red-600 dark:bg-red-400 dark:shadow-none dark:hover:outline-red-500 active:translate-y-1;
+}
+
+.input-box{
+ @apply flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600 dark:bg-white/5 dark:outline-white/10 dark:focus-within:outline-indigo-500 ;
+}

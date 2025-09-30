@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wish your friends and family with this New Year card with your names on it !!"
+    />
+    <meta name="keywords" content="New Year,2024,Happy New Year,Party " />
+    <meta name="author" content="Dhinakaran" />
+    <meta property="og:title" content=" New Year Greeting App" />
+    <meta
+      name="og:description"
+      content="Wish everyone a Happy New Year with names on it. Give it a try !!"
+    />
+    <meta
+      property="og:image"
+      content="/festival-greeting-app/images/festival-greeting-app.jpg"
+    />
+    <title>Dashboard</title>
+
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-gray-900">
+    <section class="w-full mt-10" id="AdminForm">
+        <div class="border-b border-gray-900/10 pb-7 dark:border-white/10 justify-items-center">
+          <h2 class="text-5xl font-semibold text-gray-900 dark:text-white">
+            DashBoard
+          </h2>
+          <p class="mt-1 text-sm/6 text-gray-600 dark:text-gray-400">
+            The Admins Profile information.
+          </p>
+        </div>
+
+        <section class="w-full justify-center flex pt-10" id="admin-info">
+          <div class="grid pt-2  grid-cols-3 gap-4 w-6/12 bg-gray-600 rounded text-gray-300 border border-gray-400 shadow-2xl *:p-2 *:content-center *:border-b *:border-gray-500">
+             <!--1  -->
+            <div class="text-gray-400 font-semibold">Id :</div>
+             <div class="col-span-2" id="id"></div>
+             <!-- 2 -->
+              <div class="text-gray-400 font-semibold">UserName :</div>
+             <div class="col-span-2" id="UserName"></div>
+             <!-- 3 -->
+              <div class="text-gray-400 font-semibold">FullName :</div>
+             <div class="col-span-2" id="FullName"></div>
+             <!-- 4 -->
+              <div class="text-gray-400 font-semibold">Age :</div>
+             <div class="col-span-2" id="Age"></div>
+             <!-- 5 -->
+              <div class="text-gray-400 font-semibold">Gender :</div>
+             <div class="col-span-2" id="Gender"></div>
+             <!-- 6 -->
+              <div class="text-gray-400 font-semibold">Email :</div>
+             <div class="col-span-2" id="Email"></div>
+              <!-- 7 -->
+              <div class="text-gray-400 font-semibold">Phone No :</div>
+             <div class="col-span-2" id="PhoneNo"></div>
+
+             
+          </div>
+        </section>
+    </section>
+
+    <script type="module" src="./assets/js/dashboard.js"></script>
+  </body>
+</html>

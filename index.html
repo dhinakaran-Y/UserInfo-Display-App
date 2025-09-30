@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wish your friends and family with this New Year card with your names on it !!"
+    />
+    <meta name="keywords" content="New Year,2024,Happy New Year,Party " />
+    <meta name="author" content="Dhinakaran" />
+    <meta property="og:title" content=" New Year Greeting App" />
+    <meta
+      name="og:description"
+      content="Wish everyone a Happy New Year with names on it. Give it a try !!"
+    />
+    <meta
+      property="og:image"
+      content="/festival-greeting-app/images/festival-greeting-app.jpg"
+    />
+    <title>Login page</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Wish your friends and family with this New Year card with your names on it !!" />
-  <meta name="keywords" content="New Year,2024,Happy New Year,Party " />
-  <meta name="author" content="Dhinakaran" />
-  <meta property="og:title" content=" New Year Greeting App" />
-  <meta name="og:description" content="Wish everyone a Happy New Year with names on it. Give it a try !!" />
-  <meta property="og:image" content="/festival-greeting-app/images/festival-greeting-app.jpg" />
-  <title>Login page</title>
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-  <!-- TailwindCSS -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <body class="bg-gray-900">
+    <form class="w-full mt-10" id="AdminForm">
+        <div class="border-b border-gray-900/10 pb-7 dark:border-white/10 justify-items-center">
+          <h2 class="text-5xl font-semibold text-gray-900 dark:text-white">
+            Admin Login
+          </h2>
+          <p class="mt-1 text-sm/6 text-gray-600 dark:text-gray-400">
+            This information will be displayed to Authorized Admin.So, be
+            careful what you share.
+          </p>
+        </div>
+        <div class="mt-10 justify-items-center">
+          <!-- username -->
+          <div class="">
+            <label
+              for="admin-name"
+              class="block font-medium text-gray-900 dark:text-white"
+              >Username</label
+            >
+            <div class="mt-2 w-[600px]">
+              <div
+                class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600 dark:bg-white/5 dark:outline-white/10 dark:focus-within:outline-indigo-500"
+              >
+                <div
+                  class="shrink-0 text-base text-gray-500 select-none sm:text-sm/6 dark:text-gray-400"
+                >
+                  Admin :
+                </div>
+                <input
+                  id="admin-name"
+                  type="text"
+                  name="admin-name"
+                  placeholder="janesmith"
+                  class="block w-7xl bg-white py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 dark:bg-transparent dark:text-white dark:placeholder:text-gray-500"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- password -->
+          <div class="mt-5">
+            <label
+              for="admin-password"
+              class="block font-medium text-gray-900 dark:text-white"
+              >Password</label
+            >
+            <div class="mt-2 w-[600px]">
+              <div
+                class="input-box"
+              >
+                <input
+                  id="admin-password"
+                  type="password"
+                  name="admin-password"
+                  placeholder="Password"
+                  class="block w-7xl bg-white py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 dark:bg-transparent dark:text-white dark:placeholder:text-gray-500"
+                />
+              </div>
+            </div>
+          </div>
 
-<body class="bg-gray-900">
- 
-  <h1 class="text-5xl text-red-400 underline">Hello Welcome</h1>
+          <div class="mt-6 flex items-center gap-x-6">
+            <button
+              type="button"
+              class="my-btn-clear"
+              id="clear-input"
+            >
+              Clear
+            </button>
+            <button
+              type="submit"
+              class="my-btn-submit"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+    </form>
 
-  <script type="module" src="./assets/js/main.js"></script>
-</body>
-
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
 </html>
