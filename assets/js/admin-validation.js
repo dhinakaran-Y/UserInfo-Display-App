@@ -11,8 +11,16 @@ export async function adminValidation(name, password) {
     }),
   });
 
+  //console.log(response.status);
+
+  if (response.status === 400) {
+    alert(`username: ${name},password: ${password} - invalid`);
+    // If API call fails, clear cookie & redirect
+    document.cookie ="token=; path=/UserInfo-Display-App/; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+  }
+  
   if (!response.ok) {
-    throw new Error(`Failed to admin validation: ${response.status}`);
+    throw  new Error(`Failed to admin validation: ${response.status}`);
   }
   
   const data = await response.json();
@@ -60,7 +68,7 @@ export async function getAdmin(token)  {
     throw new Error(`Failed to fetch admin info: ${response.status}`);
   }
   const data = await response.json();
-  console.log(data);
+  //console.log(data);
   return data
 
   }catch (error) {
